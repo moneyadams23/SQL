@@ -86,3 +86,11 @@ from jansales
 group by product 
 order by sum(quantity*price) desc 
 limit 1
+
+select artist_name, track_name
+from spotifydata
+order by popularity desc limit 10;
+
+select artist_name, track_name, duration_ms
+from spotifydata
+order by time_signature desc limit 10;
